@@ -1,0 +1,90 @@
+p:not(footer p){
+    font-family: "Arkhip";
+}
+
+#top-projetos {
+    background-image: url(/imagens/opac.jpeg);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-projetos .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#top-projetos .container p {
+    width: 50%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#top-projetos .container h1 {
+    font-size: 25px;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    word-spacing: -1px;
+}
+
+#galeria .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#galeria .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#galeria .box img {
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #0000009c;
+}
+
+#galeria .box img:hover {
+    border-radius: 10px;
+    transition: 0.7s;
+    transform: scale(1.01);
+    box-shadow: 0 10px 10px #000000a7;
+}
+
+@media screen and (max-width: 900px) {
+    #top-projetos {
+        background-position: center center;
+    }
+
+    #top-projetos .container {
+        flex-direction: column;
+    }
+
+    #top-projetos .container p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #top-projetos .container h1 {
+        font-size: 19px;
+        width: 100%;
+        font-weight: 300;
+    }
+
+    #galeria .grid {
+        grid-template-columns: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #galeria .grid img {
+        width: 100%;
+    }
+}
