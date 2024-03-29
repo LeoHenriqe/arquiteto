@@ -1,5 +1,5 @@
 h1:not(footer h1){
-    font-family: "Arkhip";
+     font-family: "Montserrat", sans-serif;
 }
 
 #sobre-pag{
@@ -28,7 +28,7 @@ h1:not(footer h1){
 }
 
 .txt h1{
-    font-family: "Arkhip";
+     font-family: "Montserrat", sans-serif;
     font-size: 40px;
 }
 
