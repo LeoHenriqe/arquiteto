@@ -24,6 +24,7 @@
     <header class="bg-body-tertiary">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="/imagens/LOGO DR.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,14 +54,14 @@
                         <h1>Design inovador, precisão na engenharia e execução impecável na construção.</h1>
                     </div>
                     <div class="botao-top">
-                        Escolha seu serviço!
-                        <button type="button">
-                            check
-                        </button>
-                        <button>
-                            Enviar
-                        </button>
-
+                        <h1>Que serviço você precisa?</h1>
+                        <select id="op">
+                            <option value="Arquitetura">Arquitetura</option>
+                            <option value="Design de Interiores">Design de interiores</option>
+                            <option value="Execução de Projetos">Execução de projetos</option>
+                            <option value="Acompanhamento de Obra">Acompanhamento de obra</option>
+                        </select>
+                        <button onclick="enviarParaWhatsApp()">Enviar para WhatsApp</button>
                     </div>
                 </div>
             </div>
@@ -111,10 +112,43 @@
         </div>
     </section>
 
+    <section id="servicos">
+        <div class="container">
+            <h1>NOSSOS SERVIÇOS</h1>
+            <div class="BOX-MASTER">
+                <div class="box">
+                    <img src="/imagens-projetos/01.jpg" alt="">
+                    <p>ARQUITETURA CRIATIVA</p>
+                    <h1>Arquitetura criativa é muito mais do que simplesmente projetar edifícios funcionais. É uma
+                        expressão artística que transcende formas e estruturas convencionais, desafiando as normas
+                        estabelecidas para criar espaços verdadeiramente inspiradores. Na essência da arquitetura
+                        criativa reside a busca incessante por inovação e originalidade, combinada com uma profunda
+                        compreensão das necessidades e aspirações dos usuários.</h1>
+                </div>
+                <div class="box">
+                    <img src="/imagens/02.jpg" alt="">
+                    <p>DESIGN MODERNO</p>
+                    <h1>O design moderno é uma expressão multifacetada de criatividade e funcionalidade que reflete os
+                        valores e estéticas da era contemporânea. Caracterizado por linhas limpas, formas geométricas
+                        simples e uma abordagem minimalista, o design moderno busca simplificar e aprimorar a
+                        experiência humana no ambiente construído.</h1>
+                </div>
+                <div class="box">
+                    <img src="/imagens/RENDER02.png" alt="">
+                    <p>CONSTRUÇÃO SEM COMPLICAÇÕES</p>
+                    <h1>Construção sem complicações é um ideal almejado por todos os envolvidos em projetos de
+                        edificação. Busca-se simplificar e otimizar cada etapa do processo construtivo, desde o
+                        planejamento inicial até a conclusão da obra, a fim de garantir eficiência, qualidade e
+                        satisfação para todos os envolvidos.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projetos">
         <div class="container">
             <div class="sobre-projetos">
-                <h1>Sobre nossos projetos</h1>
+                <h1>PROJETOS</h1>
                 <p>Em nossos projetos, valorizamos a utilização de materiais naturais e técnicas construtivas típicas da
                     região, combinados com ideias contemporâneas de arquitetura que têm suas raízes no modernismo e
                     minimalismo. Esses elementos são cuidadosamente integrados para harmonizar com o ambiente e a
@@ -125,7 +159,6 @@
                     inovadora, sustentabilidade e valorização do imóvel, características que definem nossos projetos.
                 </p>
             </div>
-            <h1 id="veja">Veja aqui</h1>
             <div class="box">
                 <div class="box-projetos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <img src="/imagens/RENDER01.png" alt="">
@@ -181,5 +214,6 @@
     AOS.init();
 </script>
 <script type="module" src="count.js"></script>
+<script src="/js/check.js"></script>
 
 </html>

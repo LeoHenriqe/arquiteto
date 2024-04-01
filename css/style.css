@@ -15,15 +15,17 @@ header {
     height: 9vh;
     display: flex;
     justify-content: center;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 header .navbar img {
-    width: 80px;
+    width: 60px;
 }
 
 header .nav-item {
-    font-size: 22px;
-    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 #slider {
@@ -38,41 +40,60 @@ header .nav-item {
     display: inline-flex;
 }
 
-#slider .slider-content .slide-box{
-    background-image: url(/imagens/BANNER-DO-SITE.png);
-    background-size: contain;
+#slider .slider-content .slide-box {
+    background-image: url(/imagens/top.jpeg);
+    background-size: cover;
+    height: 580px;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
-#slider .slider-content .slide-box .txt h1{
+#slider .slider-content .slide-box .txt h1 {
     color: white;
     font-weight: 300;
     width: 60%;
 }
 
-#slider .slider-content .slide-box .container{
+#slider .slider-content .slide-box .container {
     height: 100%;
     align-items: center;
     display: flex;
     justify-content: space-around;
 }
 
-#slider .slider-content .slide-box .botao-top{
-    background-color: rgb(170, 170, 170);
+#slider .slider-content .slide-box .botao-top {
+    background-color: rgba(255, 255, 255, 0.61);
     width: 50%;
-    height: 30%;
+    height: 40%;
     justify-content: center;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
-#slider .slider-content .slide-box .botao-top button{
-    width: 50%;
+#slider .slider-content .slide-box .botao-top h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+
+#slider .slider-content .slide-box .botao-top #op {
     border: none;
     padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#slider .slider-content .slide-box .botao-top button {
+    width: 60%;
+    border: none;
+    padding: 4px;
     margin: 2px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 199, 0, 0.63);
+    color: white;
 }
 
 .box-refe {
@@ -82,7 +103,7 @@ header .nav-item {
     width: 100%;
     height: 150px;
     position: relative;
-    top: -90px;
+    top: -290px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -107,17 +128,17 @@ header .nav-item {
     color: rgb(0, 0, 0);
     font-size: 30px;
     padding-left: 10px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box-refe .container h5 {
     padding-right: 10px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box-refe .container .text {
     font-size: 22px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .flex-box {
@@ -126,9 +147,8 @@ header .nav-item {
 }
 
 #sec-sobre {
-    background-image: url(/imagens/textura.jpeg);
     height: 900px;
-    margin-top: -100px;
+    margin-top: -450px;
 }
 
 #sec-sobre .container {
@@ -155,7 +175,7 @@ header .nav-item {
 #projetos h1 {
     text-align: left;
     font-size: 45px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #txt-sobre p {
@@ -163,9 +183,60 @@ header .nav-item {
     text-align: justify;
 }
 
+
+#servicos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#servicos .container {
+    text-align: center;
+}
+
+#servicos .container .BOX-MASTER {
+    display: inline-flex;
+}
+
+#servicos .box {
+    margin: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 40px;
+    background-color: rgb(241, 241, 241);
+}
+
+#servicos .box h1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    padding: 10px;
+    word-spacing: -1px;
+}
+
+#servicos .box p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#servicos .box img {
+    width: 100%;
+    height: 250px;
+    border-radius: 44px 44px 0px 0px;
+    -webkit-border-radius: 44px 44px 0px 0px;
+    -moz-border-radius: 44px 44px 0px 0px;
+}
+
 .sobre-projetos p {
     text-align: justify;
     font-size: 20px;
+    font-weight: 400;
 }
 
 #projetos .container {
@@ -270,7 +341,7 @@ header .nav-item {
 
 .redes p {
     font-size: 40px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .redes a {
@@ -284,7 +355,7 @@ header .nav-item {
     padding-top: 50px;
     text-align: center;
     font-size: 40px;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .formulario {
@@ -303,7 +374,7 @@ header .nav-item {
     font-size: 22px;
     color: rgb(0, 0, 0);
     font-weight: 400;
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: justify;
 }
 
