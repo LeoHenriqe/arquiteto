@@ -4,7 +4,7 @@ h1:not(footer h1) {
 
 #sobre-pag {
     background-image: url(/imagens/sobre-top.jpeg);
-    height: 800px;
+    height: 550px;
     display: flex;
     background-position: center;
 }
@@ -30,11 +30,11 @@ h1:not(footer h1) {
 
 .txt h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .txt p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -94,5 +94,21 @@ h1:not(footer h1) {
     #sec-sobre-top .txt-sobre,
     .valores .container .txt-valores {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #sobre-pag .container .txt{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }   
+
+    #sobre-pag .container p, #sobre-pag .container .txt h1{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
     }
 }
