@@ -185,4 +185,14 @@ p:not(footer p){
         padding: 10px;
         z-index: 1000;
     }
+
+    #galeria .grid {
+        grid-template-columns: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #galeria .grid img {
+        width: 100%;
+    }
 }
