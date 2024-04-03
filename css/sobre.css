@@ -4,7 +4,7 @@ h1:not(footer h1) {
 
 #sobre-pag {
     background-image: url(/imagens/sobre-top.jpeg);
-    height: 550px;
+    height: 750px;
     display: flex;
     background-position: center;
 }

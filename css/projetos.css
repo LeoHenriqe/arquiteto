@@ -1,11 +1,14 @@
+#body{
+    background-image: url(/imagens/opac.jpeg);
+    background-attachment: fixed;
+}
+
 p:not(footer p){
      font-family: "Montserrat", sans-serif;
 }
 
 #top-projetos {
-    background-image: url(/imagens/opac.jpeg);
-    background-attachment: fixed;
-    height: 550px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,36 +48,65 @@ p:not(footer p){
     word-spacing: -1px;
 }
 
-#galeria .container {
+#galeria{
+    background-color: rgba(255, 255, 255, 0.859);
+}
+
+#galeria .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 90%;
 }
 
 #galeria .grid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 500px 500px 500px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 #galeria .box img {
-    width: 550px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px #0000009c;
+    width: 500px;
+    opacity: 1;
 }
 
 #galeria .box img:hover {
     border-radius: 10px;
     transition: 0.7s;
     transform: scale(1.01);
-    box-shadow: 0 10px 10px #000000a7;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        height: 80px;
+    }
+
+    header .nav-item {
+        width: 100%;
+    }
+
+    #navbarNav {
+        left: -355%;
+        position: absolute;
+        width: 800px;
+        height: 130px;
+        top: 80px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        text-align: center;
+    }
+
     #top-projetos {
         background-position: center center;
+    }
+
+    #top-projetos .txt-top img{
+        width: 50%;
     }
 
     #top-projetos .container {
@@ -100,5 +132,57 @@ p:not(footer p){
 
     #galeria .grid img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #galeria .grid {
+        grid-template-columns: 50% 50%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #galeria .grid img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header {
+        width: 100%;
+        display: inline-flex;
+        justify-content: end;
+        height: 70px;
+        z-index: 1000;
+    }
+
+    header .nav-item {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        width: 130px;
+        z-index: 1000;
+    }
+
+    header .container .navbar-brand {
+        position: relative;
+        left: -220px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        z-index: 1000;
+    }
+
+    #navbarNav {
+        position: absolute;
+        width: 140px;
+        height: 130px;
+        top: 70px;
+        left: 35px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        text-align: left;
+        padding: 10px;
+        z-index: 1000;
     }
 }

@@ -21,7 +21,7 @@ header {
 }
 
 header .navbar img {
-    width: 60px;
+    width: 80px;
 }
 
 header .nav-item {
@@ -43,7 +43,7 @@ header .nav-item {
 #slider .slider-content .slide-box {
     background-image: url(/imagens/top.jpeg);
     background-size: cover;
-    height: 580px;
+    height: 700px;
     width: 100%;
     background-repeat: no-repeat;
 }
@@ -93,7 +93,7 @@ header .nav-item {
 }
 
 #slider .slider-content .slide-box .botao-top button {
-    width: 60%;
+    width: 50%;
     border: none;
     padding: 4px;
     margin: 2px;
@@ -109,7 +109,7 @@ header .nav-item {
     width: 100%;
     height: 150px;
     position: relative;
-    top: -290px;
+    top: -150px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -152,26 +152,23 @@ header .nav-item {
     width: 100%;
 }
 
-#sec-sobre {
-    height: 900px;
-    margin-top: -450px;
+#sec-sobre{
+    height: 600px;
 }
 
 #sec-sobre .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    top: 150px;
-    position: relative;
+    max-width: 90%;
 }
 
 #sec-sobre .sobre-img {
-    width: 30%;
-    margin-top: 70px;
+    width: 20%;
+    margin: 50px;
 }
 
 #txt-sobre {
-    margin-top: 120px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -198,6 +195,7 @@ header .nav-item {
 
 #servicos .container {
     text-align: center;
+    max-width: 90%;
 }
 
 #servicos .container .BOX-MASTER {
@@ -206,12 +204,11 @@ header .nav-item {
 
 #servicos .box {
     margin: 10px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    border-radius: 40px;
     background-color: rgb(241, 241, 241);
 }
 
@@ -233,10 +230,7 @@ header .nav-item {
 
 #servicos .box img {
     width: 100%;
-    height: 250px;
-    border-radius: 44px 44px 0px 0px;
-    -webkit-border-radius: 44px 44px 0px 0px;
-    -moz-border-radius: 44px 44px 0px 0px;
+    height: 300px;
 }
 
 .sobre-projetos p {
@@ -246,6 +240,7 @@ header .nav-item {
 }
 
 #projetos .container {
+    max-width: 90%;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
@@ -340,9 +335,15 @@ header .nav-item {
     padding: 40px;
 }
 
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
 .redes img {
-    width: 60px;
+    width: 40px;
     padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 .redes p {
@@ -425,13 +426,14 @@ form button:hover {
 }
 
 footer {
-    height: 60px;
+    padding: 0;
+    margin: 0;
+    height: 140px;
     background-color: rgb(241, 241, 241);
-    box-shadow: 0 0px 10px #00000061;
 }
 
 footer img {
-    width: 50px;
+    width: 150px;
     text-align: center;
     float: right;
 }
@@ -441,10 +443,32 @@ footer .container {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
 }
 
 footer h1 {
+    font-size: 12px;
+}
+
+.txt-rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.txt-rodape h1{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.txt-rodape p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.txt-rodape a {
+    text-decoration: none;
+    color: black;
     font-size: 15px;
 }
 
@@ -453,26 +477,22 @@ footer h1 {
         width: 100%;
         display: flex;
         justify-content: end;
-        align-items: center;
+        height: 80px;
     }
 
     header .nav-item {
-        font-size: 15px;
-        color: rgb(0, 0, 0);
-        width: 120px;
+        width: 100%;
     }
 
     #navbarNav {
+        left: -355%;
         position: absolute;
-        width: 200px;
+        width: 800px;
         height: 130px;
-        top: 76px;
-        left: -120px;
+        top: 80px;
         background-color: rgb(255, 255, 255);
         align-items: center;
-        text-align: left;
-        padding: 10px;
-
+        text-align: center;
     }
 
     .slide-box {
@@ -480,7 +500,7 @@ footer h1 {
     }
 
     .slider-content {
-        height: 500px;
+        height: 800px;
     }
 
     .box-refe .container i {
@@ -496,12 +516,11 @@ footer h1 {
     }
 
     #sec-sobre {
-        height: 1600px;
+        height: 1100px;
     }
 
     #sec-sobre .container {
         flex-direction: column;
-        margin-top: -200px;
         width: 80%;
     }
 
@@ -516,8 +535,31 @@ footer h1 {
     }
 
     #sec-sobre .container .sobre-img {
-        width: 80%;
+        width: 30%;
         margin-bottom: 50px;
+    }
+
+    #servicos {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+    }
+
+    #servicos .container .BOX-MASTER {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #servicos .box {
+        width: 100%;
+        height: 450px;
+    }
+
+    #servicos .box h1 {
+        font-size: 15px;
     }
 
     #projetos .sobre-projetos p {
@@ -564,7 +606,7 @@ footer h1 {
         width: 100%;
         display: inline-flex;
         justify-content: end;
-        align-items: center;
+        height: 70px;
     }
 
     header .nav-item {
@@ -576,18 +618,25 @@ footer h1 {
     header .container .navbar-brand {
         position: relative;
         left: -220px;
-        height: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
     }
 
     #navbarNav {
         position: absolute;
         width: 140px;
         height: 130px;
-        top: 59px;
+        top: 70px;
         background-color: rgb(255, 255, 255);
         align-items: center;
         text-align: left;
         padding: 10px;
+    }
+
+    #slider .slider-content{
+        height: 500px;
     }
 
     #slider .slider-content .slide-box {
@@ -645,8 +694,8 @@ footer h1 {
     }
 
     .box-refe {
-        top: -350px;
         height: 100px;
+        margin-top: 120px;
     }
 
     .box-refe .container i {
@@ -667,18 +716,19 @@ footer h1 {
     }
 
     #sec-sobre {
-        height: 1600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 1000px;
     }
 
     #sec-sobre .container {
         flex-direction: column;
-        width: 80%;
+        width: 100%;
     }
 
     #sec-sobre .container #txt-sobre {
         width: 100%;
-        padding: 0;
-        margin: 0;
     }
 
     #sec-sobre .container #txt-sobre h1 {
@@ -688,8 +738,7 @@ footer h1 {
     }
 
     #sec-sobre .container .sobre-img {
-        width: 80%;
-        margin-bottom: 50px;
+        width: 40%;
     }
 
     #servicos {
@@ -697,6 +746,7 @@ footer h1 {
         flex-direction: column;
         display: flex;
         justify-content: center;
+        margin-top: 100px;
     }
 
     #servicos .container .BOX-MASTER {
@@ -707,6 +757,7 @@ footer h1 {
 
     #servicos .box {
         width: 100%;
+        height: 450px;
     }
 
     #servicos .box h1 {
@@ -722,6 +773,15 @@ footer h1 {
         text-align: center;
     }
 
+    #projetos .container .box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projetos .container .box img{
+        margin: 10px;
+    }
+
     #projetos .container button {
         max-width: 50%;
     }
@@ -735,12 +795,12 @@ footer h1 {
         width: 30px;
     }
 
-    .contato .redes a{
+    .contato .redes a {
         font-size: 17px;
         text-align: center;
     }
 
-    .contato .redes p{
+    .contato .redes p {
         font-size: 20px;
         text-align: center;
     }
@@ -749,11 +809,27 @@ footer h1 {
         display: none;
     }
 
+    .formulario{
+        width: 100%;
+    }
+
     .formulario h6 {
         font-size: 15px;
     }
 
-    #projetos #veja {
-        font-size: 25px;
+    footer{
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .txt-rodape p{
+        font-size: 17px;
+    }
+
+    footer img{
+        width: 25%;
+        margin: 20px;
     }
 }
